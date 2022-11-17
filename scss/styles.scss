@@ -1,0 +1,129 @@
+@import "_variables.scss";
+@import "banner.scss";
+@import "aboutUs.scss";
+@import "facts.scss";
+@import "service.scss";
+@import "feauture.scss";
+@import "service2.scss";
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	box-sizing: border-box;
+
+	@include phone {
+		width: 100%;
+	}
+
+	@include tablet {
+		width: 540px;
+	}
+
+	@include tablet-landscape {
+		width: 720px;
+	}
+	@include desktop {
+		width: 960px;
+	}
+	@include big-desktop {
+		width: 1140px;
+	}
+
+
+}
+
+.title {
+	margin-top: 90px;
+	text-align: center;
+
+	@include phone {
+		margin-top: 30px;
+	}
+
+	@include tablet {
+		margin-top: 45px;
+	}
+
+	@include tablet-landscape {
+		margin-top: 60px;
+	}
+
+	&__top {
+		font-family: $f-slogan;
+		font-size: 72px;
+		color: #333333;
+
+		@include phone {
+			font-size: 30px;
+		}
+
+		@include tablet {
+			font-size: 30px;
+		}
+
+		@include tablet-landscape {
+			font-size: 60px;
+		}
+	}
+		
+	&__main {
+		margin-top: 25px;
+		margin-bottom: 40px;
+		font-family: $f-bold;
+		font-size: 32px;
+		color: #333333;
+
+		@include phone {
+			margin-top: 10px;
+			margin-bottom: 15px;
+			font-size: 15px;
+		}
+
+		@include tablet {
+			margin-top: 15px;
+			margin-bottom: 20px;
+			font-size: 20px;
+		}
+
+		@include tablet-landscape {
+			margin-top: 20px;
+			margin-bottom: 25px;
+			font-size: 30px;
+		}
+	}
+		
+	&__lineDark {
+		@extend %line;
+ 		border-bottom: 3px solid #f38181;
+	}
+}
+
+.text {
+	padding: 0 100px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	text-align: center;
+	font-family: $f-text;
+	font-size: 16px;
+	color: #333333;
+
+	@include phone {
+		padding: 0 20px;
+		margin-top: 15px;
+		margin-bottom: 30px;
+	}
+
+	@include tablet {
+		padding: 0 40px;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	@include tablet-landscape {
+		padding: 0 50px;
+		margin-top: 30px;
+		margin-bottom: 60px;
+	}
+}
+

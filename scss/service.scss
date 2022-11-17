@@ -1,0 +1,67 @@
+.servicesDescription {
+	margin-top: 60px;
+	margin-bottom: 120px;
+	text-align: center;
+
+	@include phone {
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+
+	@include tablet {
+		margin-top: 25px;
+		margin-bottom: 40px;
+	}
+
+	@include tablet-landscape {
+		margin-top: 40px;
+		margin-bottom: 60px;
+	}
+
+	 &__item {
+	 	display: inline-block;
+	 	margin-bottom: 20px;
+	 	text-align: left;
+
+	 	&-img {
+	 		display: inline-block;
+	 		padding: 0 10px;
+	 		vertical-align: top;
+	 	}
+
+	 	&-text {
+	 		display: inline-block;
+	 		max-width: 251px;
+
+	 		&_bold {
+	 			font-family: $f-regular;
+	 			font-size: 0.9rem;
+	 			color: #333333;
+
+	 		}
+
+	 		&_regular {
+	 			margin-top: 20px;
+	 			font-family: $f-text;
+	 			font-size: 1rem;
+	 			color: #999999;
+	 		}
+	 	}
+	 }
+}
+.border {
+	margin: 50px 0;
+	border-bottom: 1px solid #e5e5e5;
+
+	@include phone {
+		display: none;
+	}
+
+	@include tablet {
+		display: none;
+	}
+
+	@include tablet-landscape {
+		display: none;
+	}
+}

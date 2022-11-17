@@ -1,0 +1,21 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 12 | /     @include phone {
+ * 13 | |         display: block;
+ * 14 | |         width: 100%;
+ * 15 | |         padding: 10px 0;
+ * 16 | |         border: none;
+ * 17 | \     }
+ *    '
+ *   scss\facts.scss 12:2  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 12 \2502  \250c      @include phone {\a 13 \2502  \2502          display: block;\a 14 \2502  \2502          width: 100%;\a 15 \2502  \2502          padding: 10px 0;\a 16 \2502  \2502          border: none;\a 17 \2502  \2514      }\a    \2575 \a   scss\\facts.scss 12:2  root stylesheet";
+}

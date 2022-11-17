@@ -1,0 +1,59 @@
+.container {
+	&.containerForFeauture {
+		padding-top: 1px;
+	}
+}
+
+.feauture {
+	background-image: url("../images/feauture/background.png");
+	background-size: auto 907px;
+	background-repeat: no-repeat;
+}
+.devices {
+	margin-top: 50px;
+	text-align: center;
+
+}
+
+.deviceImg {
+	@include phone {
+		display: none;
+	}
+
+	@include tablet {
+		display: none;
+	}
+	@include tablet-landscape {
+		display: none;
+	}
+}
+
+.ipad {
+	width: 510px;
+	
+	@include phone {
+		display: none;
+	}
+	@include desktop {
+		display: none;
+	}
+	@include big-desktop {
+		display: none;
+	}
+}
+
+.phone {
+
+	@include tablet {
+		display: none;
+	}
+	@include tablet-landscape {
+		display: none;
+	}
+	@include desktop {
+		display: none;
+	}
+	@include big-desktop {
+		display: none;
+	}
+}

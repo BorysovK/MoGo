@@ -1,0 +1,307 @@
+@import "_variables.scss";
+
+.banner {
+	background: linear-gradient(rgba(233, 140, 131, 0.5), rgba(239, 204, 136, 0.5)), url("../images/banner/Layer.jpg"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container {
+	&.containerForBanner {
+		padding-top: 1px;
+	}
+}
+.header {
+
+	@include phone {
+		text-align: center;
+	}
+
+	@include tablet {
+		text-align: center;
+	}
+
+	@include tablet-landscape {
+		text-align: center;
+	}
+
+	&__logo {
+		display: block;
+		float: left;
+		@extend %logo;
+		color: $c-text;
+
+		@include phone {
+			float: none;
+		}
+
+		@include tablet {
+			float: none;
+		}
+
+		@include tablet-landscape {
+			float: none;
+		}
+	}
+
+	&__menu {
+		float: right;
+		display: block;
+
+		@include phone {
+			display: none;
+		}
+
+		@include tablet {
+			display: none;
+		}
+
+		@include tablet-landscape {
+			display: none;
+		}
+
+			&-item {
+				@extend %menu;
+				color: $c-text;
+					
+					&:hover {
+						color: #fce38a;;
+						border-bottom: 3px solid yellow;
+					}
+			}
+	}
+}
+.titleText {
+	margin-top: 170px;
+	text-align: center;
+	color: $c-text;
+
+	@include phone {
+		margin-top: 40px;
+	}
+
+	@include tablet {
+		margin-top: 70px;
+	}
+
+	@include tablet-landscape {
+		margin-top: 70px;
+	}
+
+		&__slogan {
+			font-family: $f-slogan;
+			font-size: 72px;
+
+			@include phone {
+				font-size: 30px;
+			}
+
+			@include tablet {
+				font-size: 30px;
+			}
+
+			@include tablet-landscape {
+				font-size: 60px;
+			}
+			
+		}
+		&__mainText {
+			margin-top: 40px;
+			margin-bottom: 70px;
+			font-family: $f-bold;
+			font-size: 150px;
+
+			@include phone {
+				margin-top: 15px;
+				margin-bottom: 30px;
+				font-size: 40px;
+			}
+
+			@include tablet {
+				margin-top: 25px;
+				margin-bottom: 40px;
+				font-size: 60px;
+			}
+
+			@include tablet-landscape {
+				margin-top: 30px;
+				margin-bottom: 50px;
+				font-size: 90px;
+			}
+			
+		}
+		&__line {
+			@extend %line;
+ 			border-bottom: 3px solid white;
+		}
+}
+.wrapper {
+	margin-top: 50px;
+	text-align: center;
+
+	@include phone {
+		margin-top: 15px;
+	}
+
+	@include tablet {
+		margin-top: 20px;
+	}
+
+	@include tablet-landscape {
+		margin-top: 30px;
+	}
+}
+.button {
+	padding: 12px 30px;
+	color: $c-text;
+	border: 3px solid white;
+	background-color: rgba(239, 204, 136, 0);
+	outline: none;
+	cursor: pointer;
+	font: {
+		family: $f-bold;
+		size: 16px;
+		weight: 700;
+	}
+
+	&:hover {
+		animation: bounce 1s;
+	}
+	
+	@include phone {
+		padding: 5px 15px;
+		font-size: 10px;
+	}
+
+	@include tablet {
+		padding: 7px 20px;
+		margin-top: 13px;
+	}
+
+	@include tablet-landscape {
+		padding: 7px 25px;
+		margin-top: 14px;
+	}
+
+}
+.footer {
+	margin-top: 150px;
+	text-align: center;
+
+	@include phone {
+		margin-top: 30px;
+	}
+
+	@include tablet {
+		margin-top: 60px;
+	}
+
+	@include tablet-landscape {
+		margin-top: 90px;
+	}
+
+	&__slider {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 8px;
+
+		&.hidenForSmall {
+
+			@include phone {
+				display: none;
+			}
+
+			@include tablet {
+				display: none;
+			}
+
+			@include tablet-landscape {
+				display: none;
+			}
+		}
+			
+		&-line {
+			@extend %slider;
+
+			@include desktop {
+				width: 213px;
+			}		
+			
+			&:hover {	
+				background-color: #ffffff;
+			}
+
+		}
+
+
+		&-text {
+			margin-top: 10px;
+			color: #f6eac5;
+			font: {
+				family: $f-regular;
+				size: 20px;
+				weight: 400;
+			}
+
+			@include phone {
+				font-size: 10px;
+			}
+
+			@include tablet {
+				font-size: 15px;
+			}
+
+			@include tablet-landscape {
+				font-size: 15px;
+			}
+			
+			&:hover {
+				color: $c-text;
+			}
+		}
+	}
+
+}
+.bold {
+ 	font: {
+		family: $f-bold;
+		size: 24px;
+		weight: 800;
+	}
+}
+
+@for $i from 1 through 4 {
+	.footer__slider-line-progress#{$i} {
+		height: 100%;
+		animation: filling linear 5 + s $i * 5 - 5 + s 1 forwards;
+	}
+}
+
+@keyframes filling {
+    from {
+        width: 0%;
+        background-color: red;
+    }
+    to {
+        width: 100%;
+        background-color: red;
+    }
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+

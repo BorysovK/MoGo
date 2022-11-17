@@ -1,0 +1,61 @@
+.imgBar {
+	text-align: center;
+	margin-bottom: 100px;
+
+	@include phone {
+		margin-bottom: 30px;
+	}
+
+	@include tablet {
+		margin-bottom: 60px;
+	}
+
+	@include tablet-landscape {
+		margin-bottom: 70px;
+	}
+
+		&__img {
+			display: inline-block;
+			position: relative;
+			margin-right: 15px;
+			transition: 0.5s; 
+
+			&:hover {
+				box-shadow: 10px 10px 1px #95e1d3;
+				transform: translate(-10px, -10px);
+					
+				.imgBar__img-overlay {
+					opacity: 1;
+				}
+			}
+
+				&-link {
+					text-decoration: none;
+				}
+
+				&-image {
+					display: block;
+
+					@include phone {
+						width: 100%;
+					}
+
+				}
+
+				&-overlay {
+					position: absolute;
+					@include position(0, 0, 0, 0);
+					background: linear-gradient(rgba(225, 203, 123, 0.5), rgba(218, 115, 115, 0.5));
+					transition: 0.5s;
+					opacity: 0;
+
+					&-text {
+						position: absolute;
+						@include position(100, 0, 0, 0);
+						font-family: $f-text;
+						font-size: 1.1rem;
+						color: $c-text;
+					}
+				}
+		}
+}

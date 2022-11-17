@@ -1,0 +1,89 @@
+.facts {
+	background-color: #95e1d3;
+	width: 100%;
+}
+.cell {
+	display: inline-block;
+	width: 217px;
+	padding: 90px 0;
+	border-left: 1px solid #fff;
+	text-align: center;
+
+	@include phone {
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+		border: none;
+	}
+
+	@include tablet {
+		width: 253px;
+		padding: 20px 0;
+		border: none;
+	}
+
+	@include tablet-landscape {
+		width: 227px;
+		padding: 45px 0;
+		border: none;
+	}
+	@include desktop {
+		width: 181px;
+	}
+
+	&:last-child {
+		border-right: 1px solid #fff;
+
+		@include phone {
+			border: none;
+		}
+
+		@include tablet {
+			border: none;
+		}
+
+		@include tablet-landscape {
+			border: none;
+		}
+	}
+
+	&-number {
+		font-family: $f-bold;
+		font-size: 72px;
+		color: $c-text;
+
+		@include phone {
+			font-size: 40px;
+		}
+
+		@include tablet {
+			font-size: 50px;
+		}
+
+		@include tablet-landscape {
+			font-size: 60px;
+		}
+	}
+
+	&-text {
+		margin-top: 25px;
+		font-family: $f-regular;
+		font-size: 15px;
+		color: $c-text;
+
+		@include phone {
+			margin-top: 10px;
+			font-size: 10px;
+		}
+
+		@include tablet {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+
+		@include tablet-landscape {
+			margin-top: 20px;
+			font-size: 13px;
+		}
+	}
+}

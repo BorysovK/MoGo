@@ -1,0 +1,131 @@
+.title {
+	&.service2 {
+		margin-top: 0px;
+
+		@include phone {
+			margin-top: 20px;
+		}
+
+		@include tablet {
+			margin-top: 30px;
+		}
+
+		@include tablet-landscape {
+			margin-top: 40px;
+		}
+	}
+}
+.content {
+
+	&__img {
+		float: left;
+
+		@include phone {
+			display: none;
+		}
+
+		@include tablet {
+			display: none;
+		}
+
+		@include tablet-landscape {
+			display: none;
+		}
+		@include desktop {
+			width: 400px;
+		}
+
+	}
+
+	&__items {
+		float: right;
+
+		@include phone {
+			float: none;
+		}
+
+		@include tablet {
+			float: none;
+		}
+
+		@include tablet-landscape {
+			float: none;
+		}
+	}
+}
+.item {
+	width: 510px;
+	max-height: 66px;
+	overflow: hidden;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: 0.5s;
+
+	@include phone {
+		width: 320px;
+		margin: 10px auto;
+	}
+
+	@include tablet {
+		margin: 10px auto;
+	}
+
+	@include tablet-landscape {
+		margin: 10px auto;
+	}
+
+	&:hover {
+		max-height: 200px;
+		
+		.item__arrow {
+			transform: rotate(180deg); 
+		}
+	}
+
+
+	&__image {
+		padding: 15px;
+	}
+
+	&__text {
+		display: inline-block;
+		width: 380px;
+		vertical-align: 25px;
+		font-family: $f-regular;
+		font-size: 0.9rem;
+
+		@include phone {
+			width: 195px;
+		}
+	}
+
+	&__arrow {
+		padding: 25px 15px;
+		transition: 0.5s;
+	}
+
+	&__description {
+		padding: 20px;
+		max-height: 80px;
+		overflow: auto;
+		border-top: 1px solid #e5e5e5;
+		font-family: $f-italic;
+		font-size: 1rem;
+		color: #999999;
+		cursor: default;
+		scrollbar-color: #95e1d3;
+		scrollbar-width: thin;
+
+		&::-webkit-scrollbar-track {
+			border-radius: 4px;
+		}
+		&::-webkit-scrollbar {
+			width: 7px;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 4px;
+			background: #95e1d3;
+		}
+	}
+}

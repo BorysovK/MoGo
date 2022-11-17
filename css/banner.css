@@ -1,0 +1,345 @@
+.header__logo {
+  font-family: Montserrat-Bold;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header__menu-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: Montserrat-Regular;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.titleText__line {
+  width: 60px;
+  margin: 0 auto;
+}
+
+.footer__slider-line {
+  width: 258px;
+  height: 3px;
+  background-color: #f6eac5;
+}
+
+.banner {
+  background: linear-gradient(rgba(233, 140, 131, 0.5), rgba(239, 204, 136, 0.5)), url("../images/banner/Layer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container.containerForBanner {
+  padding-top: 1px;
+}
+
+@media (max-width: 576px) {
+  .header {
+    text-align: center;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    text-align: center;
+  }
+}
+.header__logo {
+  display: block;
+  float: left;
+  color: white;
+}
+@media (max-width: 576px) {
+  .header__logo {
+    float: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .header__logo {
+    float: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header__logo {
+    float: none;
+  }
+}
+.header__menu {
+  float: right;
+  display: block;
+}
+@media (max-width: 576px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header__menu {
+    display: none;
+  }
+}
+.header__menu-item {
+  color: white;
+}
+.header__menu-item:hover {
+  color: #fce38a;
+  border-bottom: 3px solid yellow;
+}
+
+.titleText {
+  margin-top: 170px;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 576px) {
+  .titleText {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .titleText {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .titleText {
+    margin-top: 70px;
+  }
+}
+.titleText__slogan {
+  font-family: "KaushanScript-Regular";
+  font-size: 72px;
+}
+@media (max-width: 576px) {
+  .titleText__slogan {
+    font-size: 30px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .titleText__slogan {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .titleText__slogan {
+    font-size: 60px;
+  }
+}
+.titleText__mainText {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  font-family: "Montserrat-Bold";
+  font-size: 150px;
+}
+@media (max-width: 576px) {
+  .titleText__mainText {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .titleText__mainText {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .titleText__mainText {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 90px;
+  }
+}
+.titleText__line {
+  border-bottom: 3px solid white;
+}
+
+.wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .wrapper {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .wrapper {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    margin-top: 30px;
+  }
+}
+
+.button {
+  padding: 12px 30px;
+  color: white;
+  border: 3px solid white;
+  background-color: rgba(239, 204, 136, 0);
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat-Bold";
+  font-size: 16px;
+  font-weight: 700;
+}
+.button:hover {
+  animation: bounce 1s;
+}
+@media (max-width: 576px) {
+  .button {
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .button {
+    padding: 7px 20px;
+    margin-top: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .button {
+    padding: 7px 25px;
+    margin-top: 14px;
+  }
+}
+
+.footer {
+  margin-top: 150px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .footer {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .footer {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer {
+    margin-top: 90px;
+  }
+}
+.footer__slider {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 8px;
+}
+@media (max-width: 576px) {
+  .footer__slider.hidenForSmall {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .footer__slider.hidenForSmall {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer__slider.hidenForSmall {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer__slider-line {
+    width: 213px;
+  }
+}
+.footer__slider-line:hover {
+  background-color: #ffffff;
+}
+.footer__slider-text {
+  margin-top: 10px;
+  color: #f6eac5;
+  font-family: "Montserrat-Regular";
+  font-size: 20px;
+  font-weight: 400;
+}
+@media (max-width: 576px) {
+  .footer__slider-text {
+    font-size: 10px;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .footer__slider-text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer__slider-text {
+    font-size: 15px;
+  }
+}
+.footer__slider-text:hover {
+  color: white;
+}
+
+.bold {
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.footer__slider-line-progress1 {
+  height: 100%;
+  animation: filling linear 5s 0s 1 forwards;
+}
+
+.footer__slider-line-progress2 {
+  height: 100%;
+  animation: filling linear 5s 5s 1 forwards;
+}
+
+.footer__slider-line-progress3 {
+  height: 100%;
+  animation: filling linear 5s 10s 1 forwards;
+}
+
+.footer__slider-line-progress4 {
+  height: 100%;
+  animation: filling linear 5s 15s 1 forwards;
+}
+
+@keyframes filling {
+  from {
+    width: 0%;
+    background-color: red;
+  }
+  to {
+    width: 100%;
+    background-color: red;
+  }
+}
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+/*# sourceMappingURL=banner.css.map */
